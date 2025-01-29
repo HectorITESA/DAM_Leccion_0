@@ -1,7 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DAM_Leccion_HAOV.MainPage">
+             x:Class="DAM_Leccion_HAOV.MainPage"
+             xmlns:Leccion2="clr-namespace:DAM_Leccion_HAOV.Model"
+             >
+    <ContentPage.Resources>
+
+        <ResourceDictionary>
+
+            <Leccion2:PersonaModel x:Key="persona" Nombre="Sofia">
+                
+            </Leccion2:PersonaModel>
+            
+        </ResourceDictionary>
+        
+    </ContentPage.Resources>
 
     <ScrollView>
         <VerticalStackLayout
@@ -32,8 +45,11 @@
                 HorizontalOptions="Fill" />
             <Entry Placeholder="Escribe un nombre"
                    HorizontalOptions="FillAndExpand" 
-                   x:Name="txtNombre"> 
+                   x:Name="txtNombre"
+                   Text="{Binding Nombre}"
+                   >
                 
+
             </Entry>
             <Button
                 x:Name="btnAceptar"

@@ -24,9 +24,17 @@ namespace DAM_Leccion_HAOV
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
         public void ejecutar() {
-            PersonaModel personaModel = new PersonaModel();
-            personaModel.Nombre = "Hola Hector Osorio";
-            txtNombre.Text = personaModel.Nombre;
+            PersonaModel personaModel = new PersonaModel() {
+                Nombre = "Hola Hector O",
+            };
+            BindingContext = personaModel.Nombre;
+           // txtNombre.Text = personaModel.Nombre;
+           /*Binding peronsaBinding= new Binding();
+            peronsaBinding.Source = personaModel; //Origen
+            peronsaBinding.Path = "Nombre";
+            txtNombre.SetBinding(Entry.TextProperty,peronsaBinding);*/
+
+
         }
         private void btnAceptar_Clicked(object sender, EventArgs e)
         {
