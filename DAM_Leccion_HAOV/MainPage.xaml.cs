@@ -1,4 +1,6 @@
-﻿namespace DAM_Leccion_HAOV
+﻿using DAM_Leccion_HAOV.Model;
+
+namespace DAM_Leccion_HAOV
 {
     public partial class MainPage : ContentPage
     {
@@ -7,6 +9,7 @@
         public MainPage()
         {
             InitializeComponent();
+            ejecutar();
         }
 
         private void OnCounterClicked(object sender, EventArgs e)
@@ -19,6 +22,15 @@
                 CounterBtn.Text = $"Clicked {count} times";
 
             SemanticScreenReader.Announce(CounterBtn.Text);
+        }
+        public void ejecutar() {
+            PersonaModel personaModel = new PersonaModel();
+            personaModel.Nombre = "Hola Hector Osorio";
+            txtNombre.Text = personaModel.Nombre;
+        }
+        private void btnAceptar_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Asistente del sistema", "Se ha guardado en la BD", "Aceptar","ayos");
         }
     }
 
