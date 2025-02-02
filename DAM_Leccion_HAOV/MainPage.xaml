@@ -48,7 +48,15 @@
                    x:Name="txtNombre"
                    Text="{Binding Nombre}"
                    >
-                
+            </Entry>
+            <Entry IsPassword="True"
+                   Placeholder="Contraseña"
+                   HorizontalOptions="FillAndExpand" 
+                   x:Name="txtContraseña"
+                   Text=""
+       
+                   >
+
 
             </Entry>
             <Button
