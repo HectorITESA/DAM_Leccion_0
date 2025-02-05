@@ -68,11 +68,22 @@
 
 	<ItemGroup>
 	  <Folder Include="ViewModel\" />
-	  <Folder Include="View\" />
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiSplashScreen Include="Resources\Splash\ico.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="View\Modos.xaml.cs">
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="View\Modos.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
