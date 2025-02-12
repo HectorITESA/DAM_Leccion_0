@@ -27,7 +27,9 @@ namespace DAM_Leccion_HAOV
         }
         public void Ejecutar() {
             personaModel = new PersonaModel() {
-                Nombre = "Hola Hector O",
+                Nombre = "Alondra",
+                Apellido="Montalvo",
+                Edad ="24"
             };
             BindingContext = personaModel;
            // txtNombre.Text = personaModel.Nombre;
@@ -41,8 +43,11 @@ namespace DAM_Leccion_HAOV
         //Evente Guardar 
         private void btnAceptar_Clicked(object sender, EventArgs e)
         {
-            //DisplayAlert("Asistente del sistema", "Se ha guardado en la BD", "Aceptar","ayos");
-            personaModel.Nombre="Alondra Montalvo";
+          
+            DisplayAlert("Asistente del sistema", "Se ha guardado en la BD", "Aceptar","ayos");
+            personaModel.Nombre="Alondra";
+            personaModel.Apellido = "Montalvo";
+            personaModel.Edad = "20";
             
         }
     }

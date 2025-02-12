@@ -49,6 +49,19 @@
                    Text="{Binding Nombre}"
                    >
             </Entry>
+            <Entry Placeholder="Escribe un Apellido"
+       HorizontalOptions="FillAndExpand" 
+       x:Name="txtApellido"
+       Text="{Binding Apellido}"
+       >
+                
+            </Entry>
+            <Entry Placeholder="Escribe un edad"
+       HorizontalOptions="FillAndExpand" 
+       x:Name="txtEdad"
+       Text="{Binding Edad}"
+       >
+            </Entry>
             <Entry IsPassword="True"
                    Placeholder="Contraseña"
                    HorizontalOptions="FillAndExpand" 
