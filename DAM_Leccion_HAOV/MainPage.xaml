@@ -8,9 +8,9 @@
 
         <ResourceDictionary>
 
-            <Leccion2:PersonaModel x:Key="persona" Nombre="Sofia">
+            <Leccion2:PersonasModel x:Key="persona" Nombre="Sofia">
                 
-            </Leccion2:PersonaModel>
+            </Leccion2:PersonasModel>
             
         </ResourceDictionary>
         
@@ -46,20 +46,20 @@
             <Entry Placeholder="Escribe un nombre"
                    HorizontalOptions="FillAndExpand" 
                    x:Name="txtNombre"
-                   Text="{Binding Nombre}"
+                   Text="{Binding personasModel.Nombre}"
                    >
             </Entry>
             <Entry Placeholder="Escribe un Apellido"
        HorizontalOptions="FillAndExpand" 
        x:Name="txtApellido"
-       Text="{Binding Apellido}"
+       Text="{Binding personasModel.Apellido}"
        >
                 
             </Entry>
             <Entry Placeholder="Escribe un edad"
        HorizontalOptions="FillAndExpand" 
        x:Name="txtEdad"
-       Text="{Binding Edad}"
+       Text="{Binding personasModel.Edad}"
        >
             </Entry>
             <Entry IsPassword="True"

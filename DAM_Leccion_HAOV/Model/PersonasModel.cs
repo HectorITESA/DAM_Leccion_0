@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DAM_Leccion_HAOV.Model
 {
-    public class PersonaModel:INotifyPropertyChanged
+    public class PersonasModel:INotifyPropertyChanged
     {
         //Atributos 
         private string? nombre;
