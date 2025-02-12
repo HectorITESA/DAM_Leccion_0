@@ -7,7 +7,8 @@ namespace DAM_Leccion_HAOV
         public App()
         {
             InitializeComponent();
-            MainPage = new AppShell();
+            //MainPage = new AppShell();
+            MainPage = new PersonasView();
         }
 
     }
